@@ -26,9 +26,9 @@ jobs:
         run: |
           python -m pip install pyinstaller
 
-      - name: Crear ejecutable
+      -       - name: Crear ejecutable
         run: |
-          pyinstaller --onefile --windowed --name "ParaMiAmor" tulipanes/tulipanes.py
+          pyinstaller --onefile --windowed --name "ParaMiAmor" tulipanes.py
 
       - name: Guardar ejecutable
         uses: actions/upload-artifact@v4
